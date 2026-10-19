@@ -1,36 +1,48 @@
-# Why Program
-what you want to do next? question that computer asked
+# Module 1: Why We Program (Chapter One, part 1)
 
-programmer = serve the user
-programmer makes software, intermediate (bridge) between hardware and user
-programmer use compiler, interpreter, programming language (Python), network
+## Why Program
+- Computers always ask: "What next?"
+- Programmers serve the user. Software is the bridge between the hardware and the user.
+- Programmers use programming languages (Python), interpreters, compilers and networks.
+- Computer = hardware + software
+  - Hardware = the physical parts (CPU, memory, keyboard, screen)
+  - Software = any set of instructions (my Python programs, but also Chrome, VS Code, macOS)
+- Program = a sequence of exact instructions, step by step
+  - Example: a dance. While the music is playing: left hand out, right hand out, wiggle, wiggle, jump.
+- Instructions must be typed correctly: "right ham" instead of "right hand" -> syntax error. The computer doesn't know what to do.
+- The computer can't fix errors by itself, unlike our brain. It does exactly what I wrote.
+  If the result is wrong, the mistake is in the instructions.
+- Computers are great at repetitive, boring tasks (e.g. counting words in a text): very fast, never tired or bored.
 
-computer = hardware + software
-programmer write code (use data, information, network, CPU, memory)
+## Hardware Overview
+- Generic computer (all hardware): input/output devices <-> CPU <-> main memory, plus secondary memory
+- I/O devices: mouse, keyboard, screen
+- CPU: runs instructions very fast and always asks "What next?"
+  It is fast, not intelligent: it only follows instructions. CPUs are much smaller today than in the 1960s.
+- Main memory (RAM): fast, close to the CPU, holds what is being used right now, emptied when the computer turns off
+- Secondary memory (SSD / hard drive): slower, holds a lot, keeps everything even when the computer is off
+- Who answers "What next?" -> the PROGRAMMER, in advance, by writing the instructions
 
-program = sequence of instruction (right instruction), step by step -> just sets of instruction
-for example: while (if) music playing, left hand out up, right hand out up, wiggle, wiggle, jump etc etc --> sets of instruction to dance
-in program, you should type correctly (for example, the error: right ham instead of right hand --> syntax error: computer doesn't know what to do)
-because computer can't fix an error by itself, unlike our brain
+### The chain
+Programmer writes instructions -> saved in secondary memory -> copied into main memory -> CPU reads them one by one, very fast
+- Python code is translated into machine language (0s and 1s), because that is the only language the CPU understands.
+- Running a .py file copies it into RAM; the file stays on the SSD.
+  The Python interpreter and open apps (VS Code, Jupyter, Terminal) also run in RAM.
 
-computer is really good to FOCUS, for example to count some words (text analysis)
+### Kitchen analogy
+- Cook = CPU (fast, but only follows instructions)
+- Recipe = program (written by the programmer)
+- Box near the stove = main memory (RAM)
+- Refrigerator = secondary memory (SSD)
+- Customer's order = input (like the keyboard)
 
-# Hardware Overview
-Generic computer: I/O devices <-> software [ CPU  <-> main memory ] <-> secondary memory
-I/O devices example: mouse, keyboard, monitor/screen
-CPU = the intelligence of computer, a circuit with million transistors, ask "what's next?"
+### Why save often
+- Unsaved changes live only in RAM. If the power goes off, they are lost.
+  The last saved version is still safe on the SSD.
+- Cmd+S copies my changes to the SSD. git push = an extra backup on GitHub.
 
-python file is store inside secondary memory, main memory would answer the what's next, in cycle (CPU and main memory)
-the difference between 1960s and today, CPU got smaller (the million transistors)
-
-the program (python file from secondary memory) is translated to main memory (using machine language 0 1 0 1 whatever) to answer what next from CPU (run in cycle)
-harddrive = store when the computer is off
-
-# Python as a Language
-talking more about Hogwarts in the beginning
-
-Python is a language that most don't understand
-created by Guido Van Rossum
-perfect for first programming language, powerful and useful, easy to learn
-
-syntax error = python is lost: your syntax is not understand by python
+## Python as a Language
+- Dr. Chuck compares Python to Parseltongue from Harry Potter: a language most people don't understand (yet).
+- Created by Guido van Rossum
+- A good first language: powerful, useful, easy to learn
+- Syntax error = Python is lost: it doesn't understand what I wrote. Python can't guess, so I have to fix it.
